@@ -12,9 +12,9 @@ const ShopContextProvider = (props)=>{
         products, currency, delivery_fee
     }
     return(
-        <ShopContextProvider>
+        <ShopContext.Provider value={value} >
             {props.children}
-        </ShopContextProvider>
+        </ShopContext.Provider>
     )
 }
 export default ShopContextProvider;
